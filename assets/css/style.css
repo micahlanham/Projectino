@@ -14,14 +14,14 @@
 header {
     padding: 20px 15px;
     font-style: italic;
-    font-size: 60px;
+    font-size: 80px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit-sticky;
-    position: sticky;
+    position: static;
     top: 20px;
     background-size: cover;
     background-position: center;
@@ -32,12 +32,16 @@ header {
 h1 {
     color: var(--quaternary-color);
     background-color: var(--secondary-color);
+    padding: 20px;
+    font-size: 40px;
+    margin-right: 100px;
 }
 body section {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--quaternary-color);
-    padding: 20px 0px;
+    padding: 0px 0px;
+    padding-right: 300px;
     margin: 0;
     text-align: left;
     justify-content: left;
@@ -47,8 +51,40 @@ body section {
     color: var(--tertiary-color);
     width: 90%;
     font-size: 20px;
-    margin: 0 auto;
+    margin-right: 50px;
     text-align: left;
+    padding-right: 50px;
+}
+.intro img {
+    height: 400px;
+    width: 500px;
+    padding: 0px;
+    align-self: center;
+    background-color: var(--quaternary-color);
+    color: var(--quaternary-color);
+    flex: 1 12%;
+    margin-right: 20px;
+    max-width: 100%;
+}
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+footer h2 {
+    display: flex;
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer div {
+    line-height: 1.5;
+    text-align: left;
+}
+footer a {
+    color: var(--secondary-color);
 }
 @media screen and (max-width: 980px) {
     header {
